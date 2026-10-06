@@ -1,0 +1,68 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+
+    justify-content: center;
+
+    background-color: #F8FAF9;
+}
+
+p {
+    font-size: 48px;
+
+    color: #1F2937;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #1F2937;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    padding: 50px 25px;
+    margin: 20px;
+
+    width: 75vw;
+
+    background-color: #E5E7EB;
+
+    gap: 10px;
+}
+
+#nova-frase {
+    padding: 10px 40px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: #16A34A;
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-right: auto;
+}
+
+#nova-frase:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.05s;
+
+    background-color: #15803D;
+}
+
+.destaque {
+    color: #16A34A;
+
+    font-size: 38px;
+    font-weight: bold;  
+}
