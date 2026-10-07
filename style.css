@@ -74,3 +74,9 @@ hr {
     font-size: 38px;
     font-weight: bold;  
 }
+
+/*OUTROS*/
+
+.shadow {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
