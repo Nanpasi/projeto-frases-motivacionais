@@ -1,5 +1,21 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /*Definindo variáveis de cores*/
+
+    /*TEMA ESCURO*/
+    --fundo-escuro: #111827;
+    --borda-escuro: #4B5563;
+    --fundo-card-escuro: #1F2937;
+    --paragrafo-escuro: #F3F4F6;
+
+    --destaque-escuro: #22C55E;
+    --destaque-hover-escuro: #16A34A;
+
+    --texto-botao-escuro: white;
+
+    /*TEMA CLARO*/
+    /*placeholder*/
 }
 
 body {
@@ -7,13 +23,13 @@ body {
 
     justify-content: center;
 
-    background-color: #111827;
+    background-color: var(--fundo-escuro);
 }
 
 p {
     font-size: 42px;
 
-    color: #F3F4F6;
+    color: var(--paragrafo-escuro);
 
     height: 150px;
 
@@ -23,7 +39,7 @@ p {
 
 hr {
     width: 100%;
-    border: 1px solid #4B5563;
+    border: 1px solid var(--borda-escuro);
 }
 
 #content {
@@ -31,7 +47,7 @@ hr {
     flex-direction: column;
     justify-content: center;
 
-    border: 1px solid #4B5563;
+    border: 1px solid var(--borda-escuro);
     border-radius: 10px;
 
     padding: 50px 25px;
@@ -40,7 +56,7 @@ hr {
     width: 75vw;
     height: 60vh;
 
-    background-color: #1F2937;
+    background-color: var(--fundo-card-escuro);
 
     gap: 10px;
 }
@@ -51,8 +67,8 @@ hr {
     border: none;
     border-radius: 4px;
 
-    background: #22C55E;
-    color: white;
+    background: var(--destaque-escuro);
+    color: var(--texto-botao-escuro);
 
     font-size: 22px;
     font-weight: bold;
@@ -65,11 +81,11 @@ hr {
 #nova-frase:hover {
     transform: scale(1.1);
 
-    background-color: #16A34A;
+    background-color: var(--destaque-hover-escuro);
 }
 
 .destaque {
-    color: #22C55E;
+    color: var(--destaque-escuro);
 
     font-size: 38px;
     font-weight: bold;  
