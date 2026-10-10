@@ -1,3 +1,30 @@
+// Funções
+function temaClaro() {
+    // Alterando o valor da variável
+    tema = "claro";
+    // Alterando o ícone do botão de tema
+    botao_tema.textContent = "☾";
+    // Alterando a cor de fundo da página
+    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--fundo-claro");
+    // Alterando a cor do card principal da página (content)
+    card.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--fundo-card-claro");
+    // Alterando a cor do parágrafo da frase motivacional
+    frase_motivacional.style.color = getComputedStyle(document.documentElement).getPropertyValue("--paragrafo-claro");
+}
+
+function temaEscuro() {
+    // Alterando o valor da variável
+    tema = "escuro";
+    // Alterando o ícone do botão de tema
+    botao_tema.textContent = "☀";
+    // Alterando a cor de fundo da página
+    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--fundo-escuro");
+    // Alterando a cor do card principal da página (content)
+    card.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--fundo-card-escuro");
+    // Alterando a cor do parágrafo da frase motivacional
+    frase_motivacional.style.color = getComputedStyle(document.documentElement).getPropertyValue("--paragrafo-escuro");
+}
+
 // Lista de frases motivacionais que vão ser exibidas aleatoriamente
 const frases = [
     "O progresso importa mais que a perfeição.",
@@ -17,6 +44,8 @@ const frases = [
 
 let tema = "escuro";
 
+// Card com o conteúdo principal da página
+const card = document.getElementById("content");
 // Parágrafo que contem a frase motivacional
 const frase_motivacional = document.getElementById("frase");
 // Botão que mostra uma nova frase motivacional para o usuário
@@ -33,11 +62,9 @@ botao_frase.addEventListener("click", function() {
 botao_tema.addEventListener("click", function() {
     console.log("Alternou o tema!");
     if (tema=="escuro") {
-        tema = "claro";
-        botao_tema.textContent = "☾";
+        temaClaro();
     }
     else {
-        tema = "escuro";
-        botao_tema.textContent = "☀";
+        temaEscuro();
     }
 });

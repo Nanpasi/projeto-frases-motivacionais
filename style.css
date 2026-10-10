@@ -15,7 +15,13 @@
     --texto-botao-escuro: white;
 
     /*TEMA CLARO*/
-    /*placeholder*/
+    --fundo-claro: #F8FAF9;
+    --borda-claro: #E5E7EB;
+    --fundo-card-claro: #FFFFFF;
+    --paragrafo-claro: #1F2937;
+
+    --destaque-claro: #16A34A;
+    --destaque-hover-claro: #15803D;
 }
 
 body {
@@ -28,6 +34,8 @@ body {
     gap: 15px;
 
     background-color: var(--fundo-escuro);
+
+    transition: ease-in-out 0.2s;
 }
 
 p {
@@ -38,6 +46,8 @@ p {
     height: 150px;
 
     margin: 20px 0;
+
+    transition: ease-in-out 0.2s;
 
 }
 
@@ -62,6 +72,7 @@ hr {
     height: 60vh;
 
     background-color: var(--fundo-card-escuro);
+    transition: ease-in-out 0.2s;
 
     gap: 10px;
 }
