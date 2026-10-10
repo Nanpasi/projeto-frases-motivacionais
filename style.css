@@ -20,8 +20,12 @@
 
 body {
     display: flex;
+    flex-direction: column;
 
     justify-content: center;
+    align-items: center;
+
+    gap: 15px;
 
     background-color: var(--fundo-escuro);
 }
@@ -42,6 +46,7 @@ hr {
     border: 1px solid var(--borda-escuro);
 }
 
+/*========================= CONTEÚDO PRINCIPAL =========================*/
 #content {
     display: flex;
     flex-direction: column;
@@ -90,6 +95,34 @@ hr {
     font-size: 38px;
     font-weight: bold;  
 }
+
+/*========================= FOOTER =========================*/
+#botao-tema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70px;
+    height: 70px;
+
+    border: 1px solid var(--paragrafo-escuro);
+    border-radius: 50%;
+
+    background-color: var(--fundo-escuro);
+    color: var(--paragrafo-escuro);
+
+    font-size: 24pt;
+
+    transition: ease-in-out 0.05s;
+}
+
+#botao-tema:hover {
+    background-color: var(--paragrafo-escuro);
+    color: var(--fundo-escuro);
+
+    transform: scale(1.15);
+}
+
 
 /*OUTROS*/
 
