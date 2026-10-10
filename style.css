@@ -127,14 +127,6 @@ hr {
     transition: ease-in-out 0.05s;
 }
 
-#botao-tema:hover {
-    background-color: var(--paragrafo-escuro);
-    color: var(--fundo-escuro);
-
-    transform: scale(1.15);
-}
-
-
 /*OUTROS*/
 
 .shadow {
