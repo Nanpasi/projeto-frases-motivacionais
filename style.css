@@ -91,6 +91,8 @@ hr {
 
     margin-right: auto;
 
+    cursor: pointer;
+
     transition: transform 0.05s ease-in-out;
 }
 
@@ -123,6 +125,8 @@ hr {
     color: var(--paragrafo-escuro);
 
     font-size: 24pt;
+
+    cursor: pointer;
 
     transition: ease-in-out 0.05s;
 }
