@@ -102,6 +102,12 @@ hr {
     background-color: var(--destaque-hover-escuro);
 }
 
+#nova-frase:active {
+    transform: scale(1);
+    
+    background-color: var(--destaque-escuro);
+}
+
 .destaque {
     color: var(--destaque-escuro);
 
@@ -129,6 +135,13 @@ hr {
     cursor: pointer;
 
     transition: ease-in-out 0.05s;
+}
+
+#botao-tema:hover {
+    transform: scale(1.15);
+}
+#botao-tema:active {
+    transform: scale(1);
 }
 
 /*OUTROS*/

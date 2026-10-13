@@ -82,7 +82,7 @@ botao_tema.addEventListener("click", function() {
 });
 
 botao_tema.addEventListener("mouseenter", function() {
-    botao_tema.style.transform = "scale(1.15)";
+    //botao_tema.style.transform = "scale(1.15)";
     if (tema=="escuro") {
         botao_tema.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--paragrafo-escuro");
         botao_tema.style.color = getComputedStyle(document.documentElement).getPropertyValue("--fundo-escuro");
@@ -94,7 +94,7 @@ botao_tema.addEventListener("mouseenter", function() {
 });
 
 botao_tema.addEventListener("mouseleave", function() {
-    botao_tema.style.transform = "scale(1)";
+    //botao_tema.style.transform = "scale(1)";
     if (tema=="escuro") {
         botao_tema.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--fundo-escuro");
         botao_tema.style.color = getComputedStyle(document.documentElement).getPropertyValue("--paragrafo-escuro");
