@@ -1,5 +1,5 @@
 # Projeto Frases Motivacionais
-<img src="assets/demo.gif" width="800" alt="Gif apresentando o projeto">
+<img src="assets/img/demo.gif" width="800" alt="Gif apresentando o projeto">
 
 # ℹ️ Sobre
 Aplicação web simples que mostra frases motivacionais aleatórias.
